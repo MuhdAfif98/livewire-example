@@ -1,10 +1,10 @@
-<div class="max-w-3xl mx-auto bg-white rounded-lg shadow-md p-6">
-    <h2 class="text-2xl font-bold mb-4">Pagination</h2>
+<div class="max-w-3xl p-6 mx-auto bg-white rounded-lg shadow-md">
+    <h2 class="mb-4 text-2xl font-bold">Pagination</h2>
     <ul class="space-y-4">
         @foreach($items as $item)
-            <li class="bg-gray-100 rounded-lg p-4">
-                <h3 class="text-lg font-semibold">{{ $item['API'] }}</h3>
-                <p class="text-gray-700">{{ $item['Description'] }}</p>
+            <li class="p-4 bg-gray-100 rounded-lg">
+                <h3 class="text-lg font-semibold">{{ $item['name'] }}</h3>
+                <p class="text-gray-700">{{ $item['description'] }}</p>
             </li>
         @endforeach
     </ul>
